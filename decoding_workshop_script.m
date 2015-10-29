@@ -1,5 +1,6 @@
+% method_index (between 1 and 3) must be in workspace
+% file_index (between 1 and 4) must be in workspace
 methods = {'plain', 'mcdermott', 'joint'};
-method_index = 3;
 
 method = methods{method_index};
 
@@ -10,8 +11,6 @@ audio_files = dir('media');
 file_names = {audio_files([audio_files.bytes]>0).name};
 
 nFiles = length(file_names);
-for file_index = 1:nFiles
-    file_name = file_names{file_index};
-    file_path = ['media/', file_name];
-    synthesize_mcdermott(file_name);
-end
+file_name = file_names{file_index};
+file_path = ['media/', file_name];
+synthesize_mcdermott(file_name);
