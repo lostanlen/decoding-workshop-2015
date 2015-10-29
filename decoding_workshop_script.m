@@ -58,7 +58,7 @@ archs = sc_setup(opts);
 % Options for the reconstruction
 prefix = [file_name(1:(end-4)), '_', method]
 reconstruction_opt.prefix = prefix;
-reconstruction_opt = fill_reconstruction_opt(struct());
+reconstruction_opt = fill_reconstruction_opt(reconstruction_opt);
 
 % Reconstruct
 sc_reconstruct(target_signal, archs, reconstruction_opt);
