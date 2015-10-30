@@ -1,8 +1,8 @@
-timit_10111110111
-sub hist snr = 15.76; sub kurt snr = -17.43; sub ac snr = 11.23; env hist snr = 2.10
-env mean snr = 25.85; env var snr = 21.34; env skew snr = 19.78; env kurt snr = 32.45
-env C snr = 27.71; env C all snr = 24.05; mod power snr = 12.15; env ac snr = 10.53
-mod C1 snr = 22.02; mod C1 all snr = 6.65; mod C2 snr = 19.37
+debussy_10111110111
+sub hist snr = 13.90; sub kurt snr = 7.80; sub ac snr = 4.41; env hist snr = 6.66
+env mean snr = 30.44; env var snr = 22.82; env skew snr = 24.64; env kurt snr = 30.64
+env C snr = 19.03; env C all snr = 9.87; mod power snr = 11.69; env ac snr = 9.79
+mod C1 snr = 17.71; mod C1 all snr = 5.16; mod C2 snr = 21.89
 
 SYNTHESIS PARAMETERS:
 P.constraint_set.sub_var  = 1
@@ -17,7 +17,7 @@ P.constraint_set.mod_pow  = 1
 P.constraint_set.mod_C1   = 1
 P.constraint_set.mod_C2   = 1
 
-desired_synth_dur = 5.00; length_ratio = 1.22; max_orig_dur = 7.00;
+desired_synth_dur = 5.00; length_ratio = 2.03; max_orig_dur = 7.00;
 measurement_windowing = 2 (1--> unwindowed, 2--> global window)
 imposition_windowing = 1 (1--> unwindowed, 2--> global window)
 win_steepness = 0.50
