@@ -56,7 +56,7 @@ end
 archs = sc_setup(opts);
 
 % Options for the reconstruction
-prefix = [file_name(1:(end-4)), '_', method]
+prefix = [file_name(1:(end-4)), '_', method];
 reconstruction_opt.prefix = prefix;
 reconstruction_opt = fill_reconstruction_opt(reconstruction_opt);
 
