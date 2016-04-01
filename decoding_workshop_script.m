@@ -30,8 +30,9 @@ opts{1}.time.T = T;
 opts{1}.time.size = N;
 opts{1}.time.max_Q = 16;
 opts{1}.time.nFilters_per_octave = 16;
-opts{1}.time.has_duals = true;
+opts{1}.time.duality = 'hermitian';
 opts{1}.time.gamma_bounds = [1 128];
+opts{1}.time.is_chunked = false;
 
 if ~strcmp(method, 'none')
     opts{2}.time.T = T;
@@ -63,4 +64,4 @@ reconstruction_opt.prefix = prefix;
 reconstruction_opt = fill_reconstruction_opt(reconstruction_opt);
 
 % Reconstruct
-sc_reconstruct(target_signal, archs, reconstruction_opt);
+rec_signal = sc_reconstruct(target_signal, archs, reconstruction_opt);
